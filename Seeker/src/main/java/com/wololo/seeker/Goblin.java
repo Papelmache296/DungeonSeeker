@@ -8,7 +8,12 @@ package com.wololo.seeker;
  *
  * @author sanch
  */
-public class Goblin {
+public class Goblin extends Enemy {
+    
+        public Goblin (String name, int health, int strength, int speed, int defence){
+        super(name, 5, 2, 6, 2);
+        
+    }
     
 }
 

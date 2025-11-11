@@ -8,7 +8,16 @@ package com.wololo.seeker;
  *
  * @author sanch
  */
-public class Ghoul {
+public class Ghoul extends Enemy {
+    
+    public Ghoul (String name, int health, int strength, int speed, int defence){
+        super(name, 10, 7, 4, 4);
+        
+    }
+    
+    
+    
+    
     
 }
 

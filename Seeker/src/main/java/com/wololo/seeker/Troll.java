@@ -8,7 +8,12 @@ package com.wololo.seeker;
  *
  * @author sanch
  */
-public class Troll {
+public class Troll extends Enemy {
+    
+        public Troll (String name, int health, int strength, int speed, int defence){
+        super(name, 30, 20, 2, 10);
+        
+    }
     
 }
 
