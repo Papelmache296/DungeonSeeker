@@ -13,10 +13,10 @@ public class Dungeon {
 }
 
 /*
-    Main class for the dungeon behaviour
-    must contain all the structure of the dungeon such as:
-    - Number of floors
-    - Amount of enemies encounter
-    - Type of enemies encountered
-    - Possible treasure chest
+    Main class for the dungeon behaviour using random.
+    Must contain all the structure of the dungeon such as:
+    - Number of floors or rooms or meybe both
+    - Amount of enemies encounter per room/floor
+    - Type of enemies encountered (one or more types)
+    - Possible treasure chest or drop
 */
