@@ -19,34 +19,27 @@ public class EnemySpawner {
     Random spawnMonster = new Random();
             
             int spawn = spawnMonster.nextInt(100);
-            int odds = 0;
-            //40% odds of spawing a Goblin
-            odds += 40;
-            if(spawn < odds){
+            //40% odds of spawing a Goblin            
+            if((spawn >= 0) && (spawn <= 39)){
             enemy = spawnGoblin();                                            
-}
+
             //25% odds of spawing a Zombie
-            odds += 25;
-            if(spawn < odds){
-            enemy = spawnZombie();                       
-}
-            //25% odds of spawing a Skeleton
-            odds += 25;
-            if(spawn < odds){
-            enemy = spawnSkeleton();            
-}
-            //10% odds of spawing a Troll
-            odds += 10;
-            if(spawn <odds){
-            enemy = spawnTroll();                       
-}
-            return enemy;
-            assert odds ==100;
-    }
-}    
+            }else if((spawn >= 40) && (spawn <= 64)){
+            enemy = spawnZombie();
             
-
-
+            //25% odds of spawing a Skeleton
+            }else if((spawn >= 65) && (spawn <= 89)){
+            enemy = spawnSkeleton();
+            
+            //10% odds of spawing a Troll
+            }else if((spawn >= 90) && (spawn <= 99)){
+            enemy = spawnTroll();                       
+            }else{
+                System.out.println("ERROR!");
+            }
+            return enemy;
+    }
+}            
             
     
     /*
