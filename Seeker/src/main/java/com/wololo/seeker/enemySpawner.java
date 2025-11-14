@@ -19,21 +19,23 @@ public class EnemySpawner {
     Random spawnMonster = new Random();
             
             int spawn = spawnMonster.nextInt(100);
-            //40% odds of spawing a Goblin            
+            //If number is between 0-39, spawns a Goblin            
             if((spawn >= 0) && (spawn <= 39)){
             enemy = spawnGoblin();                                            
 
-            //25% odds of spawing a Zombie
+            //If number is between 4-64, spawns a Ghoul
             }else if((spawn >= 40) && (spawn <= 64)){
-            enemy = spawnZombie();
+            enemy = spawnGhoul();
             
-            //25% odds of spawing a Skeleton
+            //If number is between 64-89, spawns a Skeleton
             }else if((spawn >= 65) && (spawn <= 89)){
             enemy = spawnSkeleton();
             
-            //10% odds of spawing a Troll
+            //If number is between 90-99, spawns a Troll
             }else if((spawn >= 90) && (spawn <= 99)){
-            enemy = spawnTroll();                       
+            enemy = spawnTroll();
+            
+            //In case of error
             }else{
                 System.out.println("ERROR!");
             }
