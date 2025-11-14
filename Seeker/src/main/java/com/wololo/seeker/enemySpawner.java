@@ -21,19 +21,19 @@ public class EnemySpawner {
             int spawn = spawnMonster.nextInt(100);
             //If number is between 0-39, spawns a Goblin            
             if((spawn >= 0) && (spawn <= 39)){
-            enemy = spawnGoblin();                                            
+            enemy = new Goblin();                                            
 
             //If number is between 4-64, spawns a Ghoul
             }else if((spawn >= 40) && (spawn <= 64)){
-            enemy = spawnGhoul();
+            enemy = new Ghoul();
             
             //If number is between 64-89, spawns a Skeleton
             }else if((spawn >= 65) && (spawn <= 89)){
-            enemy = spawnSkeleton();
+            enemy = new Skeleton();
             
             //If number is between 90-99, spawns a Troll
             }else if((spawn >= 90) && (spawn <= 99)){
-            enemy = spawnTroll();
+            enemy = new Troll();
             
             //In case of error
             }else{

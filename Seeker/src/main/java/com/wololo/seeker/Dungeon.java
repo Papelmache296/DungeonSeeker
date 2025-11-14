@@ -13,11 +13,6 @@ import java.util.ArrayList;
 public class Dungeon {
     private int MAX_PLAYERS_PER_DUNGEON = 1;
     private int MAX_FLOORS_PER_DUNGEON = 4;
-    private int MIN_ROOMS_PER_FLOOR = 1;
-    private int MAX_ROOMS_PER_FLOOR = 3;
-    private int MIN_ENEMIES_PER_ROOM = 1;
-    private int MAX_EMEMIES_PER_ROOM = 5;
-    
     private ArrayList<Enemy> enemies = new ArrayList<>();
     private String floorName;
     
